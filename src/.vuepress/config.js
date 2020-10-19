@@ -10,6 +10,8 @@ module.exports = {
    */
   description: description,
 
+  base: '/revogrid-vuepress/',
+
   /**
    * Extra tags to be injected to the page HTML `<head>`
    *
@@ -28,7 +30,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
+    repo: 'https://github.com/revolist/revogrid',
     editLinks: false,
     docsDir: '',
     editLinkText: '',
@@ -38,14 +40,6 @@ module.exports = {
       {
         text: 'Documentation',
         link: '/guide/',
-      },
-      /* {
-        text: 'Demo',
-        link: '/config/'
-      }, */
-      {
-        text: 'GitHub',
-        link: 'https://github.com/revolist/revogrid'
       }
     ],
     sidebar: {
