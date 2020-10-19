@@ -1,0 +1,19 @@
+{
+  "name": "@revolist/revogrid-vuepress",
+  "version": "0.0.1",
+  "description": "RevoGrid UI Components library",
+  "main": "index.js",
+  "authors": {
+    "name": "revolist"
+  },
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src",
+    "deploy": "gh-pages -d ./src/.vuepress/dist"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3",
+    "gh-pages": "^3.1.0"
+  }
+}
