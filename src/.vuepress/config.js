@@ -21,8 +21,7 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['script', { src: 'https://unpkg.com/@revolist/revogrid@latest/dist/revo-grid/revo-grid.js' }],
-    ['script', { src: 'https://unpkg.com/@revolist/revo-ui-avatar@latest/dist/revo-ui-avatar/revo-ui-avatar.js'}]
+    ['script', { type: 'module', src: 'https://unpkg.com/@revolist/revogrid@latest/dist/revo-grid/revo-grid.esm.js' }],
   ],
   /**
    * Theme configuration, here is the default theme configuration for VuePress.

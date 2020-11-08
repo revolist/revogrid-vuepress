@@ -7,17 +7,6 @@ const columns = [
 		order: 'asc',
 		size: 200,
 		pin: 'colPinStart',
-		// readonly: true
-	},
-	{
-    size: 60,
-    cellTemplate: (createElement, props) =>
-      createElement('revo-ui-avatar', {
-        name: props.model.name,
-        size: 30,
-        inline: true,
-        letters: 0
-      })
 	},
 	{
 		name: 'Personal',
@@ -26,7 +15,7 @@ const columns = [
 				sortable: true,
 				name: 'Age',
 				prop: 'age',
-				// pin: 'colPinEnd',
+				pin: 'colPinEnd',
 			},
 			{
 				sortable: true,
