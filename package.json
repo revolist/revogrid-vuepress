@@ -13,10 +13,11 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@revolist/revogrid-column-select": "^1.0.3",
-    "@revolist/vue-datagrid": "^1.1.1",
     "@revolist/revogrid-column-numeral": "^1.0.2",
+    "@revolist/revogrid-column-select": "^1.1.1",
+    "@revolist/vue-datagrid": "^1.1.2",
     "gh-pages": "^3.1.0",
     "vuepress": "^1.5.3"
-  }
+  },
+  "dependencies": {}
 }
