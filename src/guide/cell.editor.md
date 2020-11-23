@@ -1,6 +1,6 @@
 # Cell editor
 
-`RevoGrid` provides a way to define your own editors.
+`RevoGrid` provides a way to define your own editors. Or you can use [predefined column types](./column.types.html).
 In order to do so you have to define your class with render method.
 
 ### Class format editor sample

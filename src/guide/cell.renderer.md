@@ -1,7 +1,7 @@
 # Cell renderer
 
 This article explaines how to use custom cell function to display HTML content in a cell.
-This is a powerful feature.
+<br>Or you can use [predefined column types](./column.types.html).
 
 
 `Remember` to escape any HTML code that could be used for XSS attacks.

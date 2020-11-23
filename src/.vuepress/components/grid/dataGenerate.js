@@ -1,4 +1,4 @@
-const columns = [
+const defColumns = [
 	{
 		name: 'Name',
 		prop: 'name',
@@ -21,24 +21,25 @@ const columns = [
 				sortable: true,
 				name: 'Company',
 				prop: 'company',
-				size: 100,
+				size: 200,
 			},
 			{
 				name: 'Eyes',
 				prop: 'eyeColor',
 				sortable: true,
-				cellTemplate: (createElement, props) => (
-            createElement('span', {
-								class: 'bubble',
-								style: {
-										backgroundColor: props.model[props.prop]
-								},
+				cellTemplate: (createElement, props) => (createElement('span', {
+					class: 'bubble',
+					style: {
+							backgroundColor: props.model[props.prop]
+					},
             }, props.model[props.prop])
         )
 			},
 		]
 	}
 ];
+
+
 function generateHeader(index) {
   const asciiFirstLetter = 65;
   const lettersCount = 26;
@@ -52,8 +53,14 @@ function generateHeader(index) {
   }
   return label;
 }
+
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+}
+
 export default function generateFakeDataObject(rows, colsNumber) {
   const result = [...rows];
+  const columns = [...defColumns];
 
   for (let j = 0; j < colsNumber; j++) {
       columns.push({
@@ -78,3 +85,40 @@ export default function generateFakeDataObject(rows, colsNumber) {
     columns,
   };
 }
+
+export function generateFakeDataDemo(rows, colsNumber) {
+	const result = [...rows];
+	const columns = [...defColumns];
+
+
+	const companies = Object.keys(rows.reduce((r, p) => {
+        r[p.company] = p.company;
+        return r;
+	  }, {}));
+	const companyColumn = columns[1].children[1];  
+	columns[1].children[1] = {
+		...companyColumn,
+		columnType: 'select',
+		source: companies,
+	};
+  
+	for (let j = 0; j < colsNumber; j++) {
+		columns.push({
+			name: generateHeader(j),
+			prop: j,
+			columnType: 'number'
+		});
+	}
+  
+	for (let i in result) {
+		result[i]['highlighted'] = result[i]['eyeColor'];
+		for (let j = 0; j < colsNumber; j++) {
+			result[i][j] = getRandomArbitrary(0, 10000);
+		}
+	}
+  
+	return {
+	  source: result,
+	  columns,
+	};
+  }

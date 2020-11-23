@@ -21,7 +21,6 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['script', { type: 'module', src: 'https://unpkg.com/@revolist/revogrid@latest/dist/revo-grid/revo-grid.esm.js' }],
   ],
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
@@ -39,6 +38,10 @@ module.exports = {
       {
         text: 'Documentation',
         link: '/guide/',
+      },
+      {
+        text: 'Demo',
+        link: '/demo/',
       }
     ],
     sidebar: {
@@ -60,6 +63,7 @@ module.exports = {
                 'column.resize'
               ]
             },
+            'column.types',
             {
               title: 'Cell properties',
               collapsable: false,
