@@ -101,6 +101,13 @@ export function generateFakeDataDemo(rows, colsNumber) {
 		columnType: 'select',
 		source: companies,
 	};
+
+	columns.push({
+		name: 'Birth date',
+		prop: 'date',
+		columnType: 'date',
+		size: 150
+	});
   
 	for (let j = 0; j < colsNumber; j++) {
 		columns.push({
@@ -112,6 +119,7 @@ export function generateFakeDataDemo(rows, colsNumber) {
   
 	for (let i in result) {
 		result[i]['highlighted'] = result[i]['eyeColor'];
+		result[i]['date'] = '2020-08-24';
 		for (let j = 0; j < colsNumber; j++) {
 			result[i][j] = getRandomArbitrary(0, 10000);
 		}

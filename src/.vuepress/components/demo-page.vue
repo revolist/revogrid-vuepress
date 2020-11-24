@@ -43,6 +43,7 @@ export default {
       const types = {};
       Promise.all([
         import('@revolist/revogrid-column-select').then((p) => (types['select'] = new p.default())),
+        import('@revolist/revogrid-column-date').then((p) => (types['date'] = new p.default())),
         import('@revolist/revogrid-column-numeral').then((p) => (types['number'] = new p.default('0,0'))),
       ]).then(() => {
         this.columnTypes = types;
