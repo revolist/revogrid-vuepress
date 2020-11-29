@@ -4,6 +4,9 @@
         v-if="vGrid"
         :is="vGrid"
         class="grid-container"
+        :autoSizeColumn="{
+          mode: 'autoSizeOnTextOverlap'
+        }"
         :source="source"
         :columns="columns"
         :columnTypes="columnTypes"
@@ -11,6 +14,7 @@
         :pinnedBottomRows="pinnedBottomRows"
         theme="material"
         resize="true"
+        range="true"
         rowClass="highlighted"/>
   </div>
 </template>

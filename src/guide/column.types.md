@@ -36,7 +36,7 @@ Accept data in numeric format.
 ```js
 import NumberColumnType from '@revolist/revogrid-column-numeral'; // import library
 const plugin = { 'numeric': new NumberColumnType('0,0') }; // create plugin entity
-const columns = [{ prop: 'num', columnType: 'numeric' }]; // defint column type
+const columns = [{ prop: 'num', columnType: 'numeric' }]; // define column type
 const rows = [{ 'num': 1000 }];
 
 const grid = document.querySelector('revo-grid');

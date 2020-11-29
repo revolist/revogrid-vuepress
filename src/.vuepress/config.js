@@ -81,6 +81,7 @@ module.exports = {
               collapsable: false,
               children: ['theme', 'theme.light', 'theme.dark'],
             },
+            'autosize',
             'api',
           ]
         },

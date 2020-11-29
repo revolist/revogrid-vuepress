@@ -5,7 +5,6 @@ const defColumns = [
 		rowDrag: true,
 		sortable: true,
 		order: 'asc',
-		size: 200,
 		pin: 'colPinStart',
 	},
 	{
@@ -89,7 +88,9 @@ export default function generateFakeDataObject(rows, colsNumber) {
 export function generateFakeDataDemo(rows, colsNumber) {
 	const result = [...rows];
 	const columns = [...defColumns];
-
+	const nameColumn = columns[0];
+	nameColumn.autoSize = true;
+	nameColumn.name = 'Name(autosize)'
 
 	const companies = Object.keys(rows.reduce((r, p) => {
         r[p.company] = p.company;
