@@ -1,6 +1,11 @@
 
 # API Docs
 
+:::tip
+Read [type definition file](https://github.com/revolist/revogrid/blob/master/src/interfaces.d.ts) for the full interface information.
+All complex properties such as `ColumnRegular`, `ColumnProp`, `ColumnDataSchemaModel`, etc. can be found there.
+:::
+
 <!-- Auto Generated Below -->
 
 

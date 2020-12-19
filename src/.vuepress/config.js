@@ -1,4 +1,79 @@
-const { description } = require('../../package')
+const { description } = require('../../package');
+
+const vue = {
+  title: 'Vue',
+  children: [
+    'framework.vue.overview',
+    'framework.vue.component',
+    'framework.vue.webcomponent',
+  ]
+};
+
+const react = {
+  title: 'React',
+  children: ['framework.react.overview', 'framework.react.component']
+};
+
+const frameworks = {
+  title: 'Frameworks',
+  collapsable: false,
+  children: [
+    vue,
+    react,
+    'framework.ts',
+    'framework.angular.overview'
+  ]
+};
+
+const guide = [
+  {
+    title: 'Documentation',
+    collapsable: false,
+    children: [
+      '',
+      'installing',
+      {
+        title: 'Column definitions',
+        collapsable: false,
+        children: [
+          'column.properties',
+          'column.pinned',
+          'column.customHeader',
+          'column.grouping',
+          'autosize',
+          'column.resize'
+        ]
+      },
+      'column.types',
+      {
+        title: 'Cell properties',
+        collapsable: false,
+        children: [
+          'cell.renderer',
+          'cell.editor',
+        ]
+      },
+      'sorting',
+      {
+        title: 'Row properties',
+        collapsable: false,
+        children: [
+          'rows.pinned',
+          'rows.class',
+          'rows.headers',
+          'rows.size'
+        ]
+      },
+      {
+        title: 'Theme Manager',
+        collapsable: false,
+        children: ['theme', 'theme.light', 'theme.dark'],
+      },
+      'api',
+    ]
+  },
+  frameworks,
+];
 
 module.exports = {
   /**
@@ -45,56 +120,7 @@ module.exports = {
       }
     ],
     sidebar: {
-      '/guide/': [
-        {
-          title: 'Documentation',
-          collapsable: false,
-          children: [
-            '',
-            'installing',
-            {
-              title: 'Column definitions',
-              collapsable: false,
-              children: [
-                'column.properties',
-                'column.pinned',
-                'column.customHeader',
-                'column.grouping',
-                'column.resize'
-              ]
-            },
-            'column.types',
-            {
-              title: 'Cell properties',
-              collapsable: false,
-              children: [
-                'cell.renderer',
-                'cell.editor',
-              ]
-            },
-            'sorting',
-            'rows.pinned',
-            'rows.class',
-            'rows.headers',
-            {
-              title: 'Theme Manager',
-              collapsable: false,
-              children: ['theme', 'theme.light', 'theme.dark'],
-            },
-            'autosize',
-            'api',
-          ]
-        },
-        {
-          title: 'Frameworks',
-          collapsable: false,
-          children: [
-            'framework.react',
-            'framework.vue',
-            'framework.ts'
-          ]
-        },
-      ],
+      '/guide/': guide,
     }
   },
 
