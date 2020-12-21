@@ -7,6 +7,34 @@ Vue-datagrid provides a way to render vue components as editor.
 This functionality is slightly decreasing overall grid render performance. If you are aiming for the faster render we are recommending to stick with native <a href="./cell.editor.html">VNode render</a>.
 :::
 
+Define your editor.
+::: tip
+You can access close and save callbacks in properties.
+:::
+
+```vue
+// SampleEditor.vue
+<template>
+  <button v-on:click="iAmClicked">You clicked me {{ count }} times.</button>
+</template>
+
+<script>
+export default {
+  props: ["rowIndex", "model", "close", "save"],
+  data: function () {
+    return {
+      count: 0,
+    };
+  },
+  methods: {
+    iAmClicked(e) {
+      this.count++;
+    },
+  },
+};
+</script>
+```
+
 
 ```vue
 <template>
