@@ -5,6 +5,7 @@ const vue = {
   children: [
     'framework.vue.overview',
     'framework.vue.component',
+    'framework.vue.editor',
     'framework.vue.webcomponent',
   ]
 };
