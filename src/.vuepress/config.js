@@ -85,7 +85,7 @@ module.exports = {
    */
   description: description,
 
-  base: '/revogrid-vuepress/',
+  base: '/revogrid/',
 
   /**
    * Extra tags to be injected to the page HTML `<head>`
