@@ -55,6 +55,7 @@ const guide = [
         ]
       },
       'sorting',
+      'filters',
       {
         title: 'Row properties',
         collapsable: false,

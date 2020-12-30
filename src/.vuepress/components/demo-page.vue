@@ -12,6 +12,7 @@
         :columnTypes="columnTypes"
         :pinnedTopRows="pinnedTopRows"
         :pinnedBottomRows="pinnedBottomRows"
+        :filter="true"
         theme="material"
         resize="true"
         range="true"

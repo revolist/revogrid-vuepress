@@ -146,3 +146,13 @@ const columnTypes = { 'date': new Plugin() };
 // apply data to grid per your framework approach
 <revo-grid source={rows} columns={columns} columnTypes={columnTypes}/>
 ```
+<ClientOnly>
+  <div class="tile">
+   <iframe src="https://codesandbox.io/embed/vue-grid-date-plugin-6wudi?fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.vue&theme=dark&view=preview"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="Vue-grid-date-plugin"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+  </div>
+</ClientOnly>
