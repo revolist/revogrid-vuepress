@@ -6,6 +6,7 @@ const defColumns = [
 		sortable: true,
 		order: 'asc',
 		pin: 'colPinStart',
+		size: 200
 	},
 	{
 		name: 'Personal',

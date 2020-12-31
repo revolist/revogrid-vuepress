@@ -47,11 +47,12 @@ const guide = [
       },
       'column.types',
       {
-        title: 'Cell properties',
+        title: 'Cells',
         collapsable: false,
         children: [
           'cell.renderer',
           'cell.editor',
+          'cell.properties',
         ]
       },
       'sorting',
@@ -71,6 +72,7 @@ const guide = [
         collapsable: false,
         children: ['theme', 'theme.light', 'theme.dark'],
       },
+      'export.plugin',
       'api',
     ]
   },
