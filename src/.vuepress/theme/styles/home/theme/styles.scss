@@ -1,0 +1,144 @@
+@import "mixins";
+@import "base";
+
+.section-heading {
+	font-size: 2.5rem;
+	border: 0;
+}
+
+.section-intro {
+	font-size: 1.25rem;
+}
+
+.hero-section {
+	.headline {
+		font-size: 2.5rem;
+		font-weight: bold;
+	}
+	.subheadline {
+		font-size: 1.25rem;
+	}
+
+}
+
+.baloon {
+	$h: 30px;
+	background: #F7F7F7;
+	border-radius: 6px;
+	height: $h;
+	line-height: $h;
+	padding: 0 10px;
+
+	font-family: 'Nunito';
+	font-size: 16px;
+	color: #2C2C2C;
+	font-weight: 800;
+	display: inline-block;
+	text-align: center;
+}
+
+.hero-quotes {
+	.quote {
+		position: relative;
+		border: 0;
+		border-bottom: 1px solid #f0f0f1;
+		text-transform: uppercase;
+		background-color: transparent;
+		padding-left: 0 !important;
+	}
+}
+
+.grid-panel-present {
+	background: #FFFFFF;
+	border-radius: 12px;
+	padding: 0 40px;
+	height: 90%;
+	margin-top: 10%;
+	background: #FFFFFF;
+	box-shadow: 15px 20px 15px 5px rgba(black, .01), 0 8px 30px 0 rgba(black, .05);
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 15px;
+
+	.header-buttons {
+		border-bottom: 1px solid #f1f1f1;
+	}
+}
+
+.benefits-section {
+	.item-inner {
+		height: 100%;
+	}
+	.item-icon {
+		font-size: 3rem;
+		color: $theme-color-primary;
+		text-align: center;
+		
+		img {
+			max-width: 50px;
+			max-height: 40px;
+		}
+	}
+	.item-heading {
+		font-size: 1.125rem;
+	}
+}
+
+.content-section {
+	.key-points-list {
+		font-size: 1.125rem;
+		
+		li {
+			margin-bottom: 1rem;
+		}
+	}
+	
+	.fa-check-circle {
+		color: $theme-color-tick;
+	}
+}
+
+.theme-bg-primary {
+	a.theme-link {
+		color: #fff;
+		text-decoration: underline;
+	    -webkit-text-decoration-color: rgba(256, 256, 256, 0.5);
+        text-decoration-color: rgba(256, 256, 256, 0.5);
+		&:hover {
+			color: #fff;
+			-webkit-text-decoration-color: #fff;
+	        text-decoration-color: #fff;
+		}
+	}
+}
+
+
+@media (max-width: 575.98px) {
+	.hero-quotes .quote:after {
+		left: 50%;
+		margin-left: -10px;
+	}
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+	.section-heading {
+		font-size: 1.75rem;
+	}
+	
+	.section-intro {
+		font-size: 1.125rem;
+	}
+	
+	.hero-section {
+		.headline {
+			font-size: 2rem;
+			font-weight: bold;
+		}
+		.subheadline {
+			font-size: 1.125rem;
+		}
+	
+	}
+}

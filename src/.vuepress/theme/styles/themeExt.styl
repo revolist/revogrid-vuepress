@@ -1,5 +1,5 @@
 html, body
-  background-color: #f6f9fc !important
+  // background-color: #f6f9fc !important
 
 .demo-page-class
   .theme-default-content:not(.custom)
@@ -7,7 +7,7 @@ html, body
 
 #global-layout
   .navbar 
-    box-shadow: rgba(53, 64, 82, 0.05) 0px 0px 14px 0px
+    box-shadow: rgba(53, 64, 82, 0.05) 0 1px 0 0
     border-bottom: 0
 
     .logo
@@ -17,7 +17,18 @@ html, body
   .search-box
     margin-right: 5rem
 
+
     input
-      border-radius: 0.5rem
+      border-radius: 1rem
       background-size: 0.8rem
-      border: 1px solid #e6e6e6
+      border: 1px solid transparent
+      background-color: rgba(black, 5%)
+      height: 2.3rem
+      width: 15rem
+      background-position-y: center
+      transition: all .1s ease-in-out
+
+      &:focus
+        border-color: #4dabf7
+        outline: none
+        box-shadow: inset 0 1px 1px rgba(black,0.1), 0 0 8px rgba(34,139,230,0.5)

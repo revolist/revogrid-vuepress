@@ -1,9 +1,13 @@
 const { description } = require('../../package');
 
+const baseLink = 'guide/';
+const vueLink = 'framework.vue.overview';
+const reactLink = 'framework.react.overview';
+const angularLink = 'framework.angular.overview';
 const vue = {
   title: 'Vue',
   children: [
-    'framework.vue.overview',
+    vueLink,
     'framework.vue.component',
     'framework.vue.editor',
     'framework.vue.webcomponent',
@@ -12,7 +16,7 @@ const vue = {
 
 const react = {
   title: 'React',
-  children: ['framework.react.overview', 'framework.react.component']
+  children: [reactLink, 'framework.react.component']
 };
 
 const frameworks = {
@@ -22,7 +26,7 @@ const frameworks = {
     vue,
     react,
     'framework.ts',
-    'framework.angular.overview'
+    angularLink,
   ]
 };
 
@@ -78,7 +82,6 @@ const guide = [
   },
   frameworks,
 ];
-
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
@@ -100,6 +103,8 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
+    ['link', { href: 'https://fonts.googleapis.com/css?family=Nunito:700, 400|Roboto:400,400i,700&display=swap', rel: 'stylesheet' }],
   ],
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
@@ -112,6 +117,19 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     logo: '/logo.svg',
+    frameworks: [{
+      img: '/js.svg',
+      url: baseLink,
+    },{
+      img: '/vue.svg',
+      url: `${baseLink}${vueLink}`,
+    },{
+      img: '/react.svg',
+      url: `${baseLink}${reactLink}`,
+    },{
+      img: '/angular.svg',
+      url: `${baseLink}${angularLink}`,
+    }],
     lastUpdated: false,
     nav: [
       {

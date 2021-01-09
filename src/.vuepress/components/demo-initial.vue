@@ -1,7 +1,13 @@
 <template>
-  <div class="tile">
-    <component v-if="vGrid" :is="vGrid" class="grid-container" :source="source" :columns="columns" :pinnedTopRows="pinnedTopRows" :pinnedBottomRows="pinnedBottomRows" theme="material" resize="true" rowClass="highlighted"/>
-  </div>
+  <component
+    v-if="vGrid"
+    :is="vGrid" class="grid-container"
+    :source="source"
+    :columns="columns"
+    :range="true"
+    :filter="true"
+    theme="material"
+    rowClass="highlighted"/>
 </template>
 
 <script>
@@ -21,7 +27,7 @@ export default {
   },
   mounted() {
     import('./grid/peopleSample.js').then((e) => {
-      const newData = generateFakeDataObject(e.default, 100);
+      const newData = generateFakeDataObject(e.default, 1);
       for (let key in newData) {
         this[key] = newData[key];
       }

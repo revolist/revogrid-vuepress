@@ -1,45 +1,3 @@
-const defColumns = [
-	{
-		name: 'Name',
-		prop: 'name',
-		rowDrag: true,
-		sortable: true,
-		order: 'asc',
-		pin: 'colPinStart',
-		size: 200
-	},
-	{
-		name: 'Personal',
-		children: [
-			{
-				sortable: true,
-				name: 'Age',
-				prop: 'age',
-				pin: 'colPinEnd',
-			},
-			{
-				sortable: true,
-				name: 'Company',
-				prop: 'company',
-				size: 200,
-			},
-			{
-				name: 'Eyes',
-				prop: 'eyeColor',
-				sortable: true,
-				cellTemplate: (createElement, props) => (createElement('span', {
-					class: 'bubble',
-					style: {
-							backgroundColor: props.model[props.prop]
-					},
-            }, props.model[props.prop])
-        )
-			},
-		]
-	}
-];
-
-
 function generateHeader(index) {
   const asciiFirstLetter = 65;
   const lettersCount = 26;
@@ -59,13 +17,45 @@ function getRandomArbitrary(min, max) {
 }
 
 export default function generateFakeDataObject(rows, colsNumber) {
+	const defColumns = [
+		{
+			name: 'Name',
+			prop: 'name',
+			sortable: true,
+			order: 'asc',
+			size: 200
+		},
+		{
+			name: 'Personal',
+			children: [
+				{
+					name: 'Age',
+					prop: 'age',
+					size: 100
+				},
+				{
+					name: 'Eyes',
+					prop: 'eyeColor',
+					sortable: true,
+					cellTemplate: (createElement, props) => (createElement('span', {
+						class: 'bubble',
+						style: {
+								backgroundColor: props.model[props.prop]
+						},
+				}, props.model[props.prop])
+			)
+				},
+			]
+		}
+	];
   const result = [...rows];
   const columns = [...defColumns];
 
   for (let j = 0; j < colsNumber; j++) {
       columns.push({
           name: generateHeader(j),
-          prop: j
+		  prop: j,
+		  size: 50
       });
   }
 
@@ -87,6 +77,47 @@ export default function generateFakeDataObject(rows, colsNumber) {
 }
 
 export function generateFakeDataDemo(rows, colsNumber) {
+	const defColumns = [
+		{
+			name: 'Name',
+			prop: 'name',
+			rowDrag: true,
+			sortable: true,
+			order: 'asc',
+			pin: 'colPinStart',
+			size: 200
+		},
+		{
+			name: 'Personal',
+			children: [
+				{
+					sortable: true,
+					name: 'Age',
+					prop: 'age',
+					pin: 'colPinEnd',
+				},
+				{
+					sortable: true,
+					name: 'Company',
+					prop: 'company',
+					size: 200,
+				},
+				{
+					name: 'Eyes',
+					prop: 'eyeColor',
+					sortable: true,
+					cellTemplate: (createElement, props) => (createElement('span', {
+						class: 'bubble',
+						style: {
+								backgroundColor: props.model[props.prop]
+						},
+				}, props.model[props.prop])
+			)
+				},
+			]
+		}
+	];
+
 	const result = [...rows];
 	const columns = [...defColumns];
 	const nameColumn = columns[0];
