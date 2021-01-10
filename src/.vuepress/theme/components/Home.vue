@@ -34,7 +34,6 @@
         <div class="col-12 col-md-5 mb-5 align-self-stretch">
           <div class="grid-panel-present mb-3">
             <div class="row ps-2 pb-3 pt-3 header-buttons">
-              <span class="baloon col-3" v-text="'<revo-grid/>'"></span>
               <github-button class="col-4" href="https://github.com/revolist/revogrid" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="Star revolist/revogrid on GitHub">Star me</github-button>
             </div>
             <demo-initial/>
