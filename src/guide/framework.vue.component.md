@@ -39,7 +39,7 @@ export default {
 ```
 
 Import your vue component as cell template using `VGridVueTemplate` adapter:
-
+::: tip For version vue 3+ use @revolist/vue3-datagrid accordingly. :::
 ```vue
 <template>
   <div id="app">
