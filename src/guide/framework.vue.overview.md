@@ -1,4 +1,6 @@
-# Vue 2 Quick start
+# Quick start
+
+## Vue 2
 
 The easiest way just to use [vue-datagrid](https://www.npmjs.com/package/@revolist/vue-datagrid) adaptor.
 
@@ -49,7 +51,7 @@ Check [Sandbox](https://codesandbox.io/s/data-vue-test-3wkzi?file=/src/App.vue) 
   </div>
 </ClientOnly>
 
-# Vue 3+ Quick start
+## Vue 3+
 
 The easiest way just to use [vue-datagrid](https://www.npmjs.com/package/@revolist/vue3-datagrid) adaptor.
 
