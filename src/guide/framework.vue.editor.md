@@ -34,7 +34,9 @@ export default {
 };
 </script>
 ```
-
+::: tip
+For version vue 3+ use `@revolist/vue3-datagrid` accordingly.
+:::
 
 ```vue
 <template>
@@ -93,4 +95,6 @@ Check [Sandbox](https://codesandbox.io/s/revogrid-vueeditor-bxpq0?file=/src/App.
     ></iframe>
   </div>
 </ClientOnly>
+
+
 
