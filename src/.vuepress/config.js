@@ -1,6 +1,7 @@
 const { description } = require('../../package');
 
 const baseLink = 'guide/';
+const svelteLink = 'framework.svelte.overview';
 const vueLink = 'framework.vue.overview';
 const reactLink = 'framework.react.overview';
 const angularLink = 'framework.angular.overview';
@@ -11,6 +12,13 @@ const vue = {
     'framework.vue.component',
     'framework.vue.editor',
     'framework.vue.webcomponent',
+  ]
+};
+
+const svelte = {
+  title: 'Svelte',
+  children: [
+    svelteLink,
   ]
 };
 
@@ -25,6 +33,7 @@ const frameworks = {
   children: [
     vue,
     react,
+    svelte,
     'framework.ts',
     angularLink,
   ]
@@ -129,6 +138,9 @@ module.exports = {
     },{
       img: '/angular.svg',
       url: `${baseLink}${angularLink}`,
+    },{
+      img: '/svelte.svg',
+      url: `${baseLink}${svelteLink}`,
     }],
     lastUpdated: false,
     nav: [
