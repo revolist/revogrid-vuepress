@@ -1,4 +1,4 @@
-# Angular
+# Integration as webcomponent
 
 
 Using `revo-grid` web component collection within an Angular CLI project is a two-step process. We need to:
