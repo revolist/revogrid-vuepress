@@ -27,6 +27,14 @@ const react = {
   children: [reactLink, 'framework.react.component']
 };
 
+const angular = {
+  title: 'Angular 2+',
+  children: [
+    angularLink,
+    'framework.angular.webcomponent'
+  ]
+};
+
 const frameworks = {
   title: 'Frameworks',
   collapsable: false,
@@ -34,8 +42,8 @@ const frameworks = {
     vue,
     react,
     svelte,
+    angular,
     'framework.ts',
-    angularLink,
   ]
 };
 
