@@ -9,7 +9,7 @@ const grid = div.querySelector('revo-grid');
 ```
 
 
-## Themes maretial
+## Themes material
 
 ```js
 const grid = div.querySelector('revo-grid');

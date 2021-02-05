@@ -1,7 +1,7 @@
 # Dark themes
 
 
-## Themes maretial
+## Themes material
 
 ```js
 const grid = div.querySelector('revo-grid');
