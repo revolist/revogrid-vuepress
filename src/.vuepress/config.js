@@ -1,108 +1,16 @@
 const { description } = require('../../package');
-
-const baseLink = 'guide/';
-const svelteLink = 'framework.svelte.overview';
-const vueLink = 'framework.vue.overview';
-const reactLink = 'framework.react.overview';
-const angularLink = 'framework.angular.overview';
-const vue = {
-  title: 'Vue',
-  children: [
-    vueLink,
-    'framework.vue.component',
-    'framework.vue.editor',
-    'framework.vue.webcomponent',
-  ]
-};
-
-const svelte = {
-  title: 'Svelte',
-  children: [
-    svelteLink,
-  ]
-};
-
-const react = {
-  title: 'React',
-  children: [reactLink, 'framework.react.component']
-};
-
-const angular = {
-  title: 'Angular 2+',
-  children: [
-    angularLink,
-    'framework.angular.webcomponent'
-  ]
-};
-
-const frameworks = {
-  title: 'Frameworks',
+const { frameworksLinks, guide } = require('./config.guide');
+// const { demo } = require('./config.demo');
+const demo = [{
+  title: 'Use cases',
   collapsable: false,
-  children: [
-    vue,
-    react,
-    svelte,
-    angular,
-    'framework.ts',
-  ]
-};
+  children: ['', 'list', 'selectAll', 'grouping']
+}];
 
-const guide = [
-  {
-    title: 'Documentation',
-    collapsable: false,
-    children: [
-      '',
-      'installing',
-      {
-        title: 'Column definitions',
-        collapsable: false,
-        children: [
-          'column.properties',
-          'column.pinned',
-          'column.customHeader',
-          'column.grouping',
-          'autosize',
-          'column.resize'
-        ]
-      },
-      'column.types',
-      {
-        title: 'Cells',
-        collapsable: false,
-        children: [
-          'cell.renderer',
-          'cell.editor',
-          'cell.properties',
-        ]
-      },
-      'sorting',
-      'filters',
-      {
-        title: 'Row properties',
-        collapsable: false,
-        children: [
-          'rows.pinned',
-          'rows.class',
-          'rows.headers',
-          'rows.size'
-        ]
-      },
-      {
-        title: 'Theme Manager',
-        collapsable: false,
-        children: ['theme', 'theme.light', 'theme.dark'],
-      },
-      'export.plugin',
-      'api',
-    ]
-  },
-  frameworks,
-];
 
 module.exports = {
   title: 'RevoGrid - Excel like data grid component',
-  description: description,
+  description,
 
   base: '/revogrid/',
   head: [
@@ -118,22 +26,7 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     logo: '/logo.svg',
-    frameworks: [{
-      img: '/js.svg',
-      url: baseLink,
-    },{
-      img: '/vue.svg',
-      url: `${baseLink}${vueLink}`,
-    },{
-      img: '/react.svg',
-      url: `${baseLink}${reactLink}`,
-    },{
-      img: '/angular.svg',
-      url: `${baseLink}${angularLink}`,
-    },{
-      img: '/svelte.svg',
-      url: `${baseLink}${svelteLink}`,
-    }],
+    frameworks: frameworksLinks,
     lastUpdated: false,
     nav: [
       {
@@ -147,6 +40,7 @@ module.exports = {
     ],
     sidebar: {
       '/guide/': guide,
+      '/demo/': demo,
     }
   },
   plugins: [

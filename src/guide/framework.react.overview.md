@@ -8,6 +8,19 @@ If you are using npm modules don't forget to import and define custom component 
 :::
 
 
+With NPM:
+```bash
+npm i @revolist/revogrid-react --save;
+```
+
+With Yarn:
+
+```bash
+yarn add @revolist/revogrid-react;
+```
+
+
+
 ```jsx
 import React from "react";
 import { defineCustomElements } from "@revolist/revogrid/loader"; // webcomponent definition loader 
