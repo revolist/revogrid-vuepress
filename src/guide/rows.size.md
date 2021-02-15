@@ -13,6 +13,7 @@ const grid = div.querySelector('revo-grid');
 grid.rowSize = 50;
 ```
 
+### Individual row sizes
 To define individual row sizes use `rowDefinitions` property. 
 <br>Size definition is quite straightforward:
 
