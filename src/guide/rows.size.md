@@ -1,6 +1,19 @@
  # Row size
 
-To define row sizes use `rowDefinitions` property. 
+Use `rowSize` property if you are aiming to change all rows sizes.
+In HTML:
+
+```html
+<revo-grid row-size="50"/>
+```
+
+Or in JS:
+```js
+const grid = div.querySelector('revo-grid');
+grid.rowSize = 50;
+```
+
+To define individual row sizes use `rowDefinitions` property. 
 <br>Size definition is quite straightforward:
 
 ```js
