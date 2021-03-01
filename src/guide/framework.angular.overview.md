@@ -14,18 +14,12 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
 import { AppComponent } from "./app.component";
-// import loader
-import {defineCustomElements} from '@revolist/revogrid/loader';
-// import grid
-import {RevoGrid} from '@revolist/angular-datagrid';
-
-// register grid element
-defineCustomElements();
+import { RevoGridModule } from '@revolist/angular-datagrid';
 
 @NgModule({
   // define component
-  declarations: [AppComponent, RevoGrid],
-  imports: [BrowserModule],
+  declarations: [AppComponent],
+  imports: [BrowserModule, RevoGridModule],
   providers: [],
   bootstrap: [AppComponent]
 })
@@ -54,9 +48,10 @@ export class AppComponent {
 ```html
 <!-- app.component.html -->
 <revo-grid [source]="rows" [columns]="columns" theme="material"></revo-grid>
-
 ```
 Check [Sandbox](https://codesandbox.io/s/angular-datagrid-overview-d5i0b?fontsize=14&hidenavigation=1&theme=dark) for real live sample.
+Use [Repo](https://github.com/revolist/angular-datagrid-test) as a started if you wish.
+
 <ClientOnly>
   <iframe src="https://codesandbox.io/embed/angular-datagrid-overview-d5i0b?fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
