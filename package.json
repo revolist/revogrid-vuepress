@@ -15,8 +15,8 @@
   "devDependencies": {
     "@revolist/revogrid-column-date": "^1.0.4",
     "@revolist/revogrid-column-numeral": "^1.0.2",
-    "@revolist/revogrid-column-select": "^1.1.6",
-    "@revolist/vue-datagrid": "^2.9.6",
+    "@revolist/revogrid-column-select": "^2.0.1",
+    "@revolist/vue-datagrid": "^2.9.9",
     "bootstrap": "^5.0.0-beta1",
     "gh-pages": "^3.1.0",
     "node-sass": "^5.0.0",

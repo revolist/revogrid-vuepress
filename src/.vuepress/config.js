@@ -4,7 +4,27 @@ const { frameworksLinks, guide } = require('./config.guide');
 const demo = [{
   title: 'Use cases',
   collapsable: false,
-  children: ['', 'list', 'selectAll', 'grouping']
+  children: ['', 'jsx.template', {
+    title: 'Vanilla JS',
+    collapsable: false,
+    children: ['js.usage', 'select.column']
+  }, {
+    title: 'Vue',
+    collapsable: false,
+    children: ['list', 'selectAll', 'grouping', 'vue.store.data']
+    }, {
+      title: 'React',
+      collapsable: false,
+      children: ['react.sample']
+  }, {
+    title: 'Angular',
+    collapsable: false,
+    children: ['angular.sample']
+}, {
+  title: 'Svelte',
+  collapsable: false,
+  children: ['svelte.sample']
+}]
 }];
 
 

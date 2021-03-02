@@ -112,6 +112,7 @@ const guide = [{
 				collapsable: false,
 				children: ['theme', 'theme.light', 'theme.dark'],
 			},
+			'jsx.template',
 			'export.plugin',
 			'api',
 		]
