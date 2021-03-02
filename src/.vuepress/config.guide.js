@@ -114,6 +114,7 @@ const guide = [{
 			},
 			'jsx.template',
 			'export.plugin',
+			'grid.size',
 			'api',
 		]
 	},
