@@ -7,7 +7,7 @@ const demo = [{
   children: ['', 'jsx.template', {
     title: 'Vanilla JS',
     collapsable: false,
-    children: ['js.usage', 'select.column']
+    children: ['js.usage', 'select.column', 'jsx.tree']
   }, {
     title: 'Vue',
     collapsable: false,
