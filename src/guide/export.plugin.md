@@ -6,10 +6,10 @@ With `revo-grid` starting from version `2.1.0` you can export data to file. Curr
 
 For plugin access you need:
 
-- Setup `export` option on `revo-grid` to `true`:
+- Setup `exporting` option on `revo-grid` to `true`:
 
 ``` tsx
-<revo-grid export="true"/>
+<revo-grid exporting="true"/>
 ``` 
 
 - Access export plugin from plugin list:
