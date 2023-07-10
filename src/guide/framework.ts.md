@@ -12,7 +12,7 @@ The TypeScript types can be imported with:
 import { RevoGrid } from "@revolist/revogrid/dist/types/interfaces"
 ```
 
-The Types are properties of `RevoGrid` and can be used likes this:
+The types are properties of `RevoGrid` and can be used like this:
 
 ```ts
 const tableSource: RevoGrid.DataType[] = []
