@@ -5,3 +5,15 @@ Works exactly same way as Vanilla Js, all typings supported from component folde
 
 `<revo-grid/>` fully based on typescript support. 
 It provides transparent type definition with minimal documentation needed for basic understanding of component.
+
+The TypeScript types can be imported with:
+
+```ts
+import { RevoGrid } from "@revolist/revogrid/dist/types/interfaces"
+```
+
+The Types are properties of `RevoGrid` and can be used likes this:
+
+```ts
+const tableSource: RevoGrid.DataType[] = []
+```
