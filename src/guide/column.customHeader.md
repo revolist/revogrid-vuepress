@@ -1,6 +1,6 @@
 # Custom header
 
-This article explaines how to use custom header function to display HTML content in a header.
+This article explains how to use custom header function to display HTML content in a header.
 This is a powerful feature.
 
 

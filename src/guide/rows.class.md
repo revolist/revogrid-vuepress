@@ -1,6 +1,6 @@
 # Row class binding
 
-Define property which is going to be your `rowClass` simply with `rowClass` attribute `<revo-grid rowClass="myRowClass"/>`.
+To define which property will be your `rowClass` , simply set the `rowClass` attribute `<revo-grid rowClass="myRowClass"/>`.
 After this in source row model add this property `myRowClass` in example below.
 
 

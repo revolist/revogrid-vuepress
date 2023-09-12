@@ -1,6 +1,6 @@
 # Cell renderer
 
-This article explaines how to use custom cell function to display HTML content in a cell.
+This article explains how to use a custom cell function to display HTML content in a cell.
 <br>Or you can use [predefined column types](./column.types.html).
 
 
