@@ -1,6 +1,6 @@
 # Grouping(Stacked columns)
 
-Column can be defined as group or as regular column. To stack column just define it as a group.
+Columns can be defined either as a group, or as a regular column. To stack columns just define them as a group.
 Check interfaces for more information.
 
 ``` ts

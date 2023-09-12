@@ -3,7 +3,7 @@
 ## Quick start
 
 From version `2.0` `revo-grid` supports Filtering Plugin.
-<br>To enable Filtering just setup property `filter` to `true`.
+<br>To enable Filtering just set the `filter` property to `true`.
 <br>By default there are sevaral types available:
 
 - <b>string</b> 
@@ -59,7 +59,7 @@ return '<revo-grid rowClass="myRowClass" source={source} columns={columns} filte
 
 ## Filter per column
 
-If you wish to disable filter for selected column all you have to do setup  `filter` on your column to `false`.
+If you wish to disable filtering for a selected column, all you have to do setup  `filter` on your column to `false`.
 
 ```tsx
 const columns = [{ prop: 'name', filter: false }]; // filter icon will be disabled for column with property `name`
@@ -67,7 +67,7 @@ const source = [{ name: 'Steve' }];
 return '<revo-grid rowClass="myRowClass" source={source} columns={columns} filter={true}/>';
 ```
 
-Alternatively you can setup filter type `filter: 'number'`:
+Alternatively you can set filter type `filter: 'number'`:
 ```tsx
 // tsx
 const columns = [{ prop: 'name', filter: 'number' }]; // filter type 'number' (string by default)

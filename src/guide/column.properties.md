@@ -1,6 +1,6 @@
 # Properties
 
-This article explaines how to use column properties. Any property can be added: tag, style or class.
+This article explains how to use column properties. Any property can be added: tag, style or class.
 
 
 ```js

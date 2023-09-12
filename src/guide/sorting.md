@@ -7,10 +7,10 @@ Adding sorting is quite straightforward:
 
 ## Sorting events
 
-- `beforeSorting` - `CustomEvent<{ column: RevoGrid.ColumnRegular, order: 'desc'|'asc' }>`. Triggered after header click before sorting started. Use `e.preventDefault()` in case you want prevent any farther sorting chain, `beforeSortingApply` will not be triggered.
+- `beforeSorting` - `CustomEvent<{ column: RevoGrid.ColumnRegular, order: 'desc'|'asc' }>`. Triggered after header click before sorting started. Use `e.preventDefault()` in case you want prevent any further sorting chain, `beforeSortingApply` will not be triggered.
 - `beforeSortingApply` - `CustomEvent<{ column: RevoGrid.ColumnRegular, order: 'desc'|'asc' }>`.
-Triggered before sorting data get applied. Use `e.preventDefault()` in case you want avoid data sorting and apply your own, at this case don't forget to look at `beforeSourceSortingApply` to prevent additionaly sorting during source apply.
-- `beforeSourceSortingApply` - `CustomEvent`. Triggered before sorting apply on `source` data change.  Use `e.preventDefault()` in case you don't need auto sorting apply when new `source` income.
+Triggered before data sorting is applied. Use `e.preventDefault()` in case you want avoid data sorting and apply your own, in this case don't forget to look at `beforeSourceSortingApply` to prevent additionaly sorting during source apply.
+- `beforeSourceSortingApply` - `CustomEvent`. Triggered before sorting is applied on `source` data change.  Use `e.preventDefault()` in case you don't need auto sorting to be applied on `source` change.
 
 For more details please look at API section and column data schema interfaces.
 
