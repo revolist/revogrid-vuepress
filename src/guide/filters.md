@@ -89,6 +89,8 @@ type ColumnFilterConfig = {
   include?: string[];
   // you can create your own filters here
   customFilters?: Record<string, CustomFilter>;
+  // you can apply initial filters when the data is loaded
+  multiFilterItems?: MultiFilterItem;
 };
 
 ```
@@ -113,13 +115,22 @@ const filterFunc = (cellValue, extraValue) => {
 filterFunc.extra = 'input';
 
 const filterConfig = {
-  include: ['newEqual'],
+  include: ['newEqual', 'contains'],
   customFilters: {
     'newEqual': {
       columnFilterType: 'myFilterType', // column filter type id
       name: 'Equal to A',
       func: filterFunc
-    }
+    },
+  },
+  multiFilterItems: {
+    "name": [ 
+    {
+      id: 1,
+      type: 'contains',
+      value: 'Yidir',
+      relation: 'and',
+    }]
   }
 };
 return '<revo-grid rowClass="myRowClass" source={source} columns={columns} filter={filterConfig}/>';
