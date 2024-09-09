@@ -1,5 +1,6 @@
 <template>
   <div id="global-layout">
+    <div class="custom-block danger" style="margin: 0; padding: 8px 5px">New version 4+ is released. <a href="https://rv-grid.com" style="color: #cf0000;">Please use official docs</a></div>
     <component :is="layout"/>
   </div>
 </template>

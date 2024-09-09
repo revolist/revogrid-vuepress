@@ -4,10 +4,6 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-7 pt-5 mb-5 align-self-center">
-          <div class="custom-block danger">
-            <p class="custom-block-title">New version is released.</p>
-            <p><a href="https://rv-grid.com">Please use official docs</a></p>
-          </div>
           <div class="promo p-md-3 p-lg-5">
             <h1 class="headline mt-1 mb-3 me-2">
               Hello,<br>

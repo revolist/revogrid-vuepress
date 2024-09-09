@@ -7,7 +7,7 @@
     "name": "revolist"
   },
   "scripts": {
-    "dev": "vuepress dev src",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider vuepress dev src",
     "build": "vuepress build src",
     "deploy": "gh-pages -d ./src/.vuepress/dist"
   },
