@@ -153,7 +153,7 @@ module.exports = {
   title: 'RevoGrid - Excel like data grid component',
   description,
 
-  base: '/revogrid/',
+  base: '/',
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
